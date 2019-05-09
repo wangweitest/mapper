@@ -53,7 +53,10 @@
         <javaClientGenerator targetPackage="com.ww.mapper" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <table tableName="users">
+        <!-- <table tableName="user_for_test">
+            <generatedKey column="id" sqlStatement="JDBC"/>
+        </table> -->
+        <table tableName="Pub_User_Base">
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
     </context>

@@ -5,21 +5,21 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.alibaba.fastjson.JSONObject;
-import com.ww.pojo.Users;
-import com.ww.service.UsersService;
+import com.ww.pojo.PubUserBase;
+import com.ww.service.PubUserBaseService;
 
 
 @Controller
-public class UsersController {
+public class PubUserBaseController {
 	
 	@Autowired
-	UsersService usersService;
-	@RequestMapping("/user")
+	PubUserBaseService pubUserBaseService;
+	
+	@RequestMapping("/pubUserBase")
 	@ResponseBody
 	public String find() throws Exception{
-		Users users= new Users();
-		users.setId(1L);
-		users.setUsername("2");
-		return JSONObject.toJSONString(usersService.findOne(users));
+		PubUserBase pubUserBase = new PubUserBase();
+		pubUserBase.setId(103408);
+		return JSONObject.toJSONString(pubUserBaseService.findOne(pubUserBase));
 	}
 }
