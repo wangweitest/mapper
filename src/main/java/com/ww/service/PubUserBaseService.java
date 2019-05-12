@@ -1,6 +1,6 @@
 package com.ww.service;
 
-import com.ww.pojo.PubUserBase;
+import com.ww.entity.PubUserBase;
 public interface PubUserBaseService extends BaseService<PubUserBase>{
 	
 }

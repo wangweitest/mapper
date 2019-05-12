@@ -1,6 +1,6 @@
 package com.ww.mapper;
 
-import com.ww.pojo.Users;
+import com.ww.entity.Users;
 
 import tk.mybatis.mapper.common.Mapper;
 
