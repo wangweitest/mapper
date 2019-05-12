@@ -46,7 +46,7 @@
                         password="${jdbc.password}">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.ww.pojo" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="com.ww.entity" targetProject="src/main/java"/>
 
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
 
@@ -56,7 +56,7 @@
         <!-- <table tableName="user_for_test">
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table> -->
-        <table tableName="Pub_User_Base">
+        <table tableName="Line_Plan">
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
     </context>

@@ -1,4 +1,4 @@
-package com.ww.pojo;
+package com.ww.entity;
 
 import javax.persistence.*;
 

@@ -5,7 +5,7 @@ import tk.mybatis.mapper.entity.Condition;
 public interface BaseService<T> {
 	T save(T model);
 
-	void save(List<T> models);
+//	void save(List<T> models);
 
 	void deleteById(Object id);
 
@@ -17,7 +17,7 @@ public interface BaseService<T> {
 
 	T findOne(T model);
 
-	List<T> findByCondition(Condition condition);
+//	List<T> findByCondition(Condition condition);
 
 	List<T> findAll();
 }
